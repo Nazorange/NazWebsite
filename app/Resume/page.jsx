@@ -1,0 +1,494 @@
+"use client";
+
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaNodeJs,
+  FaPython,
+  FaRProject,
+  FaJava,
+  FaBootstrap,
+  FaAws,
+
+
+} from "react-icons/fa";
+
+import { 
+        SiTailwindcss,SiCsharp,SiOpenzeppelin ,
+         SiNextdotjs,SiAndroidstudio,SiC,
+         SiCplusplus,SiPowerbi,SiMicrosoftazure,
+         SiMicrosoftsqlserver,SiMicrosoftsharepoint,
+         SiMysql,SiSolidity,SiVisualstudiocode,
+         SiMicrosoftaccess,SiTradingview,SiAmazonec2,
+         SiMicrosoftexcel,SiDocker,SiAdminer,
+         SiMicrosoftpowerpoint,SiAmazons3,SiGoogleanalytics,
+         SiTensorflow,SiKeras,SiTableau,SiFirebase ,
+
+  } from "react-icons/si";
+
+import { VscAzureDevops } from "react-icons/vsc";
+
+// about data 
+const about = {
+    title: "About me",
+    description:
+      "hi.",
+    info: [
+        {
+         fieldName: "Name",
+         fieldValue: "Nawazish K,S M"
+        },
+        {
+         fieldName: "Phone",
+         fieldValue: "(+1) 315 952 9825"
+        },
+        {
+         fieldName: "Experience",
+         fieldValue: "2 Years"
+        },
+        {
+         fieldName: "Nationality",
+         fieldValue: "Indian"
+        },
+        {
+         fieldName: "Email",
+         fieldValue: "Reachnwzboi@gmail.com"  
+        },
+        {
+         fieldName: "Linguality",
+         fieldValue: "Polyglotism"  
+        }
+    ]   
+};
+  
+// about ecperience 
+const experience = {
+    icon: "/assets/resume/badge.svg",
+    title: "My Experience",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    items: [
+      {
+        company: "Aptean.",
+        position: "CS Analyst",
+        duration: "Mar 2022 - Mar 2023",
+      },
+      {
+        company: "BrainOVision",
+        position: "Web Developer Intern",
+        duration: "Summer 2021",
+      },
+      {
+        company: "INTERAKTIVE.  IO",
+        position: "Technical Associate",
+        duration: "Jan 2021 - Oct 2021",
+      },
+    ],
+};
+  
+// about Education 
+const education = {
+    icon: "/assets/resume/cap.svg",
+    title: "My Education",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    items: [
+      {
+        institution: "Syracuse University",
+        degree: "Masters In Applied Data Science",
+        duration: "2023 - 2025",
+      },
+      {
+        institution: "GITAM Hyderabas",
+        degree: "Bachelors In Technology (Comp Sci)",
+        duration: "2018 - 2022",
+      },
+    ],
+};
+  
+//skills data 
+const skills = {
+    title: "My skills",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    skilllist: [
+      {
+        icon: <FaPython />,
+        name: "Python",
+      },
+      {
+        icon: <FaRProject />,
+        name: "R / R Studio",
+      },
+      {
+        icon:<SiTableau />,
+        name:"Tableau",
+      },
+      {
+        icon: <SiPowerbi />,
+        name: "PoweBi",
+      },
+      {
+        icon: <SiTensorflow />,
+        name: "Tensor Flow",
+      },
+      {
+        icon: <SiKeras />,
+        name: "Keras",
+      },
+      {
+        icon: <SiGoogleanalytics />,
+        name:"Google Analytics",
+      },
+      {
+        icon: <FaAws />,
+        name: "AWS",
+      },
+      {
+        icon: <SiAmazonec2 />,
+        name: "Amazon EC2",
+      },
+      {
+        icon:<SiAmazons3 />,
+        name:"Amazon s3",
+      },
+      {
+        icon:<SiMicrosoftazure />,
+        name:"Microsoft Azure" ,
+      },
+      {
+        icon: <VscAzureDevops />,
+        name: "DevOps",
+      },
+      {
+        icon: <SiMicrosoftsharepoint  />,
+        name: "DevOps",
+      },
+      {
+        icon: <SiMicrosoftpowerpoint />,
+        name: "Microsoft Power Point",
+      },
+
+      {
+        icon: <SiMicrosoftexcel />,
+        name: "Microsoft Excel",
+      },
+      {
+        icon: <SiMicrosoftaccess />,
+        name: "Microsoft Access",
+      },
+      {
+        icon: <SiMicrosoftsqlserver />,
+        name: "Microsoft SQL Server",
+      },
+      {
+        icon: <SiMysql />,
+        name: "Mysql",
+      },
+      {
+        icon: <SiDocker />,
+        name: "Docker",
+      },
+      {
+        icon: <SiAdminer />,
+        name: "Adminer",
+      },
+      {
+        icon: <SiC />,
+        name: "C Language",
+      },
+      {
+        icon: <SiCplusplus />,
+        name: "C++",
+      },
+      {
+        icon: <SiCsharp />,
+        name: "CSharp",
+      },
+      {
+        icon: <FaJava />,
+        name: "Java",
+      },
+      {
+        icon: <FaJs />,
+        name: "javascript",
+      },
+      {
+        icon: <FaHtml5 />,
+        name: "html 5",
+      },
+      {
+        icon: <FaCss3 />,
+        name: "CSS 3",
+      },
+
+      {
+        icon: <FaReact />,
+        name: "react.js ",
+      },
+      {
+        icon: <SiNextdotjs />,
+        name: "next.js",
+      },
+      {
+        icon: <FaNodeJs />,
+        name: "node.js",
+      },
+      {
+        icon: <SiTailwindcss />,
+        name: "tailwind.css",
+      },
+      {
+        icon: <FaBootstrap />,
+        name: "BootStrap",
+      },
+      {
+        icon: <SiVisualstudiocode />,
+        name: "Visual Studio Code",
+      },
+      {
+        icon: <SiAndroidstudio />,
+        name: "Android Studio",
+      },
+      {
+        icon:<SiTradingview />,
+        name: "Trading View",
+      },
+      {
+        icon: <SiFirebase />,
+        name:"Firebase",
+      },
+
+      {
+        icon: <SiOpenzeppelin />,
+        name: "Open Zeppelin",
+      },
+      {
+        icon: <SiSolidity />,
+        name: "Solidity",
+      },
+      {
+        icon: <FaFigma />,
+        name: "figma",
+      },
+    ],
+};
+  
+//project information
+const project = {
+    title: "My Projects",
+    description:
+      "Assortment of Projects undertaken by me individually or as a team member.",
+    items: [
+      {
+        Name: " project 1",
+        description: "about",
+        TechStack: "Tech ",
+      },
+      {
+        Name: " project 2",
+        description: "about",
+        TechStack: "Tech 2 ",
+      },
+    ],
+};
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import {
+        Tooltip,
+        TooltipContent,
+        TooltipProvider,
+        TooltipTrigger,
+        } from "@/components/ui/tooltip";
+  
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
+  
+const Resume = () => {
+  return (
+    <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+     }}
+  className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+>
+  <div className="container mx-auto">
+    <Tabs defaultValue="about" className="flex flex-col xl:flex-row gap-[60px]">
+      <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+
+        <TabsTrigger value="about">About me</TabsTrigger>
+        <TabsTrigger value="education">Education</TabsTrigger>
+        <TabsTrigger value="skills">Skills</TabsTrigger>
+        <TabsTrigger value="experience">Experience</TabsTrigger>
+        
+        
+        
+        <TabsTrigger value="project">Projects</TabsTrigger>
+
+      </TabsList>
+
+      {/* content */}
+      <div className="min-h-[70vh] w-full">
+        {/* experience */}
+        <TabsContent value="experience" className="w-full">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                 <h3 className="text-4xl font-bold">{experience.title}</h3>
+                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                        {experience.description}
+                    </p>
+            
+                    <ScrollArea className="h-[400px]">
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                        {experience.items.map((item, index) => {
+                            return (
+                                <li key={index} 
+                                className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                >
+                                <span className="text-accent">{item.duration}</span>
+                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                                <div className=" flex items-center gap-3">
+                                    {/* DOT */}
+                                    <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                    <p className=" text-white/60">{item.company}</p>
+                                </div>
+                                </li>
+                            );
+                        })}
+                        </ul>
+                    </ScrollArea>
+            </div>
+        </TabsContent>
+
+
+        {/* Education */}
+        <TabsContent value="education" className="w-full">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                 <h3 className="text-4xl font-bold">{education.title}</h3>
+                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                        {education.description}
+                    </p>
+            
+                    <ScrollArea className="h-[400px]">
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                        {education.items.map((item, index) => {
+                            return (
+                                <li key={index} 
+                                className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                >
+                                <span className="text-accent">{item.duration}</span>
+                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                                <div className=" flex items-center gap-3">
+                                    {/* DOT */}
+                                    <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                    <p className=" text-white/60">{item.institution}</p>
+                                </div>
+                                </li>
+                            );
+                        })}
+                        </ul>
+                    </ScrollArea>
+            </div>
+        </TabsContent>
+
+        {/* skills */}
+        <TabsContent value="skills" className="w-full h-full">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{skills.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {skills.description}
+                </p>
+            </div>
+        <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+            {skills.skilllist.map((skill, index) => {
+                 return (
+                    <li key={index}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                            </div>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p className="capitalize">{skill.name}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </li>
+                  );
+                  
+            })}
+        </ul>
+        </TabsContent>
+
+
+        {/* About Me */}
+        <TabsContent value="about"
+        className="w-full text-center xl:text-left"
+        >
+
+        <div className="flex flex-col gap-[30px]">
+            <h3 classname=" text-4xl font-bold">{about.title}</h3>
+            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+            <ul className=" grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-12 max-w-[620px] mx-auto xl:mx-0 ">
+                {about.info.map((item, index) => {
+                    return (
+                        <li key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4">
+                         <span className="text-white/60  text-xl">{item.fieldName}</span>
+                         <span className="text-xl">{item.fieldValue}</span>
+                        </li>
+                        );
+                    })}
+            </ul>
+
+        </div>
+        </TabsContent>
+
+        {/* projects */}
+        <TabsContent value="project" className="w-full">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                 <h3 className="text-4xl font-bold">{project.title}</h3>
+                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                        {project.description}
+                    </p>
+            
+                    <ScrollArea className="h-[400px]">
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                        {project.items.map((item, index) => {
+                            return (
+                                <li key={index} 
+                                className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                >
+                                <span className="text-accent">{item.Name}</span>
+                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.TechStack}</h3>
+                                <div className=" flex items-center gap-3">
+                                    {/* DOT */}
+                                    <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                    <p className=" text-white/60">{item.description}</p>
+                                </div>
+                                </li>
+                            );
+                        })}
+                        </ul>
+                    </ScrollArea>
+            </div>
+        </TabsContent>
+
+        </div>
+
+    </Tabs>
+  </div>
+</motion.div>
+
+
+  );
+};
+
+export default Resume;
+
