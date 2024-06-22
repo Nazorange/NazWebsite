@@ -35,7 +35,7 @@ import { VscAzureDevops } from "react-icons/vsc";
 const about = {
     title: "About me",
     description:
-      "hi.",
+      "I am a dedicated and detail-oriented data science professional currently pursuing a Master of Science in Applied Data Science at Syracuse University.I have honed my skills in various programming languages, including Python, R, and SQL, as well as web and machine learning frameworks like TensorFlow and Keras.My professional experience spans roles such as a Customer Success Analyst at Aptean, where I optimized SQL scripts and implemented advanced indexing techniques to enhance data accuracy and database performance.I am passionate about leveraging my technical expertise and analytical skills to drive data-driven decision-making and solve complex problems in the field of data informatics.",
     info: [
         {
          fieldName: "Name",
@@ -94,7 +94,7 @@ const education = {
     icon: "/assets/resume/cap.svg",
     title: "My Education",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+      "",
     items: [
       {
         institution: "Syracuse University",
@@ -113,7 +113,7 @@ const education = {
 const skills = {
     title: "My skills",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+      "Assortment of skills i have been learning and relearning through my professional experience.They range from programming languages to IDEs and Frameworks.",
     skilllist: [
       {
         icon: <FaPython />,
@@ -284,17 +284,58 @@ const project = {
       "Assortment of Projects undertaken by me individually or as a team member.",
     items: [
       {
-        Name: " project 1",
-        description: "about",
-        TechStack: "Tech ",
+        Name: "Options Pricing with ML",
+        description: "To predict call option close price.",
+        TechStack: "Python,Machine Learning ",
       },
+
       {
-        Name: " project 2",
-        description: "about",
-        TechStack: "Tech 2 ",
+        Name: "Farm 2 Fork",
+        description: "An App which connects farmers and grocers.",
+        TechStack: "SQL,HTML ",
       },
+
+      {
+        Name: "Energy Consumption Analysis",
+        description: "Data analysis on electricity consumption of a county's residents .",
+        TechStack: "R,Shiny ",
+      },
+
+      {
+        Name: "Block Chain Contracts",
+        description: "Wrote Contracts to mint NFTs.",
+        TechStack: "Solidity,Open Zepellin ",
+      },
+
+      {
+        Name: " ARIMA Model",
+        description: "Predicted a post-covid forecast of the Nifty50.",
+        TechStack: "Python,Deep Learning",
+      },
+
+      {
+        Name: "Suicidal Intent Analysis",
+        description: "To detect Suicidal intent in Messages.",
+        TechStack: "Python,Machine Learning ",
+      },
+
+      {
+        Name: "Portfolio Website",
+        description: "A Website showcasing me.",
+        TechStack: "Nextjs,CSS ",
+      },
+
+      {
+        Name: " Route Optimization",
+        description: "An Attempt at optimizing drone routes.",
+        TechStack: "Bluesky ",
+      },
+
+
     ],
 };
+
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import {
@@ -463,14 +504,14 @@ const Resume = () => {
                         {project.items.map((item, index) => {
                             return (
                                 <li key={index} 
-                                className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                                 >
-                                <span className="text-accent">{item.Name}</span>
-                                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.TechStack}</h3>
+                                <span className="text-l max-w-[221px] min-h-[20px] text-center lg:text-left">{item.Name}</span>
+                                <h3 className="text-accent">{item.TechStack}</h3>
                                 <div className=" flex items-center gap-3">
                                     {/* DOT */}
-                                    <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                                    <p className=" text-white/60">{item.description}</p>
+                                    
+                                    <p className=" text-white/60 text-center lg:text-left">{item.description}</p>
                                 </div>
                                 </li>
                             );
