@@ -11,11 +11,10 @@ import {
   FaRProject,
   FaJava,
   FaBootstrap,
-  FaAws,
+  FaAws,} from "react-icons/fa";
 
 
-} from "react-icons/fa";
-
+// icons
 import { 
         SiTailwindcss,SiCsharp,SiOpenzeppelin ,
          SiNextdotjs,SiAndroidstudio,SiC,
@@ -55,7 +54,7 @@ const about = {
         },
         {
          fieldName: "Email",
-         fieldValue: "Reachnwzboi@gmail.com"  
+         fieldValue: "snkhalan@g.syr.edu"  
         },
         {
          fieldName: "Linguality",
