@@ -101,7 +101,7 @@ const Contact = () => {
               onSubmit={handleSubmit}
             >
               <h3 className="text-4xl text-accent">Let's Work Together!</h3>
-              <p className="text-white/60">
+              <p className="text-white/60 text-justify">
                 Please enter your details and submit your query, and I will respond at the earliest opportunity. Alternatively, you can reach me directly via phone or email.
               </p>
               {/* input */}

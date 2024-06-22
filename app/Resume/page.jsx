@@ -32,7 +32,7 @@ import { VscAzureDevops } from "react-icons/vsc";
 
 // about data 
 const about = {
-    title: "About me",
+    title: "About Me",
     description:
       "Driven and multifaceted data science professional pursuing a Master of Science in Applied Data Science at Syracuse University. With a solid foundation in computer science engineering and a rich history of achievements in both academics and extracurricular activities, I aim to leverage my technical expertise and exceptional client handling skills to make impactful contributions in the data informatics field.",
     info: [
@@ -97,12 +97,12 @@ const education = {
     items: [
       {
         institution: "Syracuse University",
-        degree: "Masters In Applied Data Science",
+        degree: "MS In Applied Data Science",
         duration: "2023 - 2025",
       },
       {
-        institution: "GITAM Hyderabas",
-        degree: "Bachelors In Technology (Comp Sci)",
+        institution: "GITAM Hyderabad",
+        degree: "B.Tech Computer Science",
         duration: "2018 - 2022",
       },
     ],
@@ -359,17 +359,12 @@ const Resume = () => {
 >
   <div className="container mx-auto">
     <Tabs defaultValue="about" className="flex flex-col xl:flex-row gap-[60px]">
-      <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-
+      <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 ">
         <TabsTrigger value="about">About me</TabsTrigger>
         <TabsTrigger value="education">Education</TabsTrigger>
         <TabsTrigger value="skills">Skills</TabsTrigger>
-        <TabsTrigger value="experience">Experience</TabsTrigger>
-        
-        
-        
+        <TabsTrigger value="experience">Experience</TabsTrigger> 
         <TabsTrigger value="project">Projects</TabsTrigger>
-
       </TabsList>
 
       {/* content */}
@@ -378,7 +373,7 @@ const Resume = () => {
         <TabsContent value="experience" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                  <h3 className="text-4xl font-bold">{experience.title}</h3>
-                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                         {experience.description}
                     </p>
             
@@ -469,12 +464,10 @@ const Resume = () => {
 
         {/* About Me */}
         <TabsContent value="about"
-        className="w-full text-center xl:text-left"
-        >
-
-        <div className="flex flex-col gap-[30px]">
-            <h3 classname=" text-4xl font-bold">{about.title}</h3>
-            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+        className="w-full h-full text-center ">
+        <div className="flex flex-col gap-[30px] text-center xl:text-left">
+            <h3 className=" text-4xl font-bold">{about.title}</h3>
+            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{about.description}</p>
             <ul className=" grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-12 max-w-[620px] mx-auto xl:mx-0 ">
                 {about.info.map((item, index) => {
                     return (
@@ -494,7 +487,7 @@ const Resume = () => {
         <TabsContent value="project" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                  <h3 className="text-4xl font-bold">{project.title}</h3>
-                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                         {project.description}
                     </p>
             
