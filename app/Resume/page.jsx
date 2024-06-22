@@ -35,7 +35,7 @@ import { VscAzureDevops } from "react-icons/vsc";
 const about = {
     title: "About me",
     description:
-      "I am a dedicated and detail-oriented data science professional currently pursuing a Master of Science in Applied Data Science at Syracuse University.I have honed my skills in various programming languages, including Python, R, and SQL, as well as web and machine learning frameworks like TensorFlow and Keras.My professional experience spans roles such as a Customer Success Analyst at Aptean, where I optimized SQL scripts and implemented advanced indexing techniques to enhance data accuracy and database performance.I am passionate about leveraging my technical expertise and analytical skills to drive data-driven decision-making and solve complex problems in the field of data informatics.",
+      "Driven and multifaceted data science professional pursuing a Master of Science in Applied Data Science at Syracuse University. With a solid foundation in computer science engineering and a rich history of achievements in both academics and extracurricular activities, I aim to leverage my technical expertise and exceptional client handling skills to make impactful contributions in the data informatics field.",
     info: [
         {
          fieldName: "Name",
@@ -69,7 +69,7 @@ const experience = {
     icon: "/assets/resume/badge.svg",
     title: "My Experience",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+      "With a strong foundation in computer science and a continuous drive for learning, my professional journey encompasses diverse roles in the tech industry. Each position has honed my skills and deepened my expertise, from data analytics and customer success to web development and blockchain technology. Below are highlights from my career:",
     items: [
       {
         company: "Aptean.",
@@ -113,7 +113,7 @@ const education = {
 const skills = {
     title: "My skills",
     description:
-      "Assortment of skills i have been learning and relearning through my professional experience.They range from programming languages to IDEs and Frameworks.",
+      "Throughout my professional experience, I have acquired and continuously refined a diverse assortment of skills. These range from programming languages to integrated development environments (IDEs) and frameworks.",
     skilllist: [
       {
         icon: <FaPython />,
@@ -281,7 +281,7 @@ const skills = {
 const project = {
     title: "My Projects",
     description:
-      "Assortment of Projects undertaken by me individually or as a team member.",
+      "An assortment of projects undertaken by me individually or as a team member. These projects reflect my ability to apply technical skills, collaborate effectively, and deliver impactful solutions in various domains.",
     items: [
       {
         Name: "Options Pricing with ML",
@@ -343,7 +343,7 @@ import {
         TooltipContent,
         TooltipProvider,
         TooltipTrigger,
-        } from "@/components/ui/tooltip";
+} from "@/components/ui/tooltip";
   
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
@@ -499,7 +499,7 @@ const Resume = () => {
                         {project.description}
                     </p>
             
-                    <ScrollArea className="h-[400px]">
+                    <ScrollArea className="h-[400px] ">
                         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                         {project.items.map((item, index) => {
                             return (
