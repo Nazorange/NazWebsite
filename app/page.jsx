@@ -7,9 +7,8 @@ import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import TypingAnimation from "@/components/TypingAnimation"; 
-import { Analytics } from "@vercel/analytics/react" //analytics
-import { SpeedInsights } from "@vercel/speed-insights/next" //spped insights
-
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // fade animation for naz
 const fadeVariants = {
@@ -60,9 +59,9 @@ const Home = () => {
                 </span>
               </h1>
               <p className="max-w-[500px] mb-9 text-white/80 text-justify">
-              Welcome to my portfolio! I'm Nawazish Khalander, a developer transitioning into data analysis and data science. Explore my projects, skills, and experiences as I delve into the world of data to uncover insights and drive innovation. Let's collaborate and turn data into impactful solutions.
+                Welcome to my portfolio! I'm Nawazish Khalander, a developer transitioning into data analysis and data science. Explore my projects, skills, and experiences as I delve into the world of data to uncover insights and drive innovation. Let's collaborate and turn data into impactful solutions.
               </p>
-             {/* btn and socials */}
+              {/* btn and socials */}
               <div className="flex flex-col xl:flex-row items-center gap-8">
                 <a href="/CV.pdf" download>
                   <Button
@@ -70,11 +69,11 @@ const Home = () => {
                     size="lg"
                     className="uppercase flex items-center gap-2"
                   >
-                    <span> CV</span>
+                    <span>CV</span>
                     <FiDownload className="text-xl" />
                   </Button>
                 </a>
-                <div className="mb-8 xl:mb-0">
+                <div className=" xl:mb-0">
                   <Socials
                     containerStyles="flex gap-6"
                     iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
@@ -90,7 +89,7 @@ const Home = () => {
                     <FiDownload className="text-xl" />
                   </Button>
                 </a>
-              </div> 
+              </div>
             </div>
             {/* photo */}
             <div className="order-1 xl:order-none mb-8 xl:mb-0">
@@ -101,7 +100,7 @@ const Home = () => {
         <Stats />
       </section>
       <Analytics />
-      <SpeedInsights/>
+      <SpeedInsights />
     </>
   );
 };
