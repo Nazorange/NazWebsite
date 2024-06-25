@@ -8,6 +8,7 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import TypingAnimation from "@/components/TypingAnimation"; 
 import { Analytics } from "@vercel/analytics/react" //analytics
+import { SpeedInsights } from "@vercel/speed-insights/next" //spped insights
 
 
 // fade animation for naz
@@ -100,6 +101,7 @@ const Home = () => {
         <Stats />
       </section>
       <Analytics />
+      <SpeedInsights/>
     </>
   );
 };
