@@ -5,8 +5,8 @@ const TypingAnimation = () => {
   return (
     <span className="text-accent text-xl">
       <Typewriter
-        words={['Software Engineer', 'Data Analyst', 'Web Developer', 'UI/UX Designer']}
-        loop={5}
+        words={['Software Engineer', 'Data Scientist','Customer Support Analyst', 'Web Developer','Data Analyst']}
+        loop={3}
         cursor
         cursorStyle="_"
         typeSpeed={70}
