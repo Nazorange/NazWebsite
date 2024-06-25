@@ -110,7 +110,7 @@ const education = {
   
 //skills data 
 const skills = {
-    title: "My skills",
+    title: "My Skills",
     description:
       "Throughout my professional experience, I have acquired and continuously refined a diverse assortment of skills. These range from programming languages to integrated development environments (IDEs) and frameworks.",
     skilllist: [
@@ -359,7 +359,7 @@ const Resume = () => {
 >
   <div className="container mx-auto">
     <Tabs defaultValue="about" className="flex flex-col xl:flex-row gap-[60px]">
-      <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 ">
+      <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
         <TabsTrigger value="about">About me</TabsTrigger>
         <TabsTrigger value="education">Education</TabsTrigger>
         <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -433,12 +433,12 @@ const Resume = () => {
         {/* skills */}
         <TabsContent value="skills" className="w-full h-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold ">{skills.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                     {skills.description}
                 </p>
-            </div>
-        <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+            
+        <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 xl:gap-[30px]">
             {skills.skilllist.map((skill, index) => {
                  return (
                     <li key={index}>
@@ -459,6 +459,7 @@ const Resume = () => {
                   
             })}
         </ul>
+        </div>
         </TabsContent>
 
 
