@@ -59,8 +59,8 @@ const Home = () => {
                   ish Khalander
                 </span>
               </h1>
-              <p className="max-w-[500px] mb-9 text-white/80">
-                I Excel.
+              <p className="max-w-[500px] mb-9 text-white/80 text-justify">
+              Welcome to my portfolio! I'm Nawazish Khalander, a developer transitioning into data analysis and data science. Explore my projects, skills, and experiences as I delve into the world of data to uncover insights and drive innovation. Let's collaborate and turn data into impactful solutions.
               </p>
              {/* btn and socials */}
               <div className="flex flex-col xl:flex-row items-center gap-8">
