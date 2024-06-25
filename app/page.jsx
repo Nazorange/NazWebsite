@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-import TypingAnimation from "@/components/TypingAnimation"; // Ensure correct path
+import TypingAnimation from "@/components/TypingAnimation"; 
+import { Analytics } from "@vercel/analytics/react" //analytics
 
 
 // fade animation for naz
@@ -98,6 +99,7 @@ const Home = () => {
         </div>
         <Stats />
       </section>
+      <Analytics />
     </>
   );
 };
