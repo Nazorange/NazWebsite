@@ -33,17 +33,34 @@ const Contact = () => {
   // State for alert
   const [alert, setAlert] = useState({ show: false, type: "", message: "" });
 
+  // State for form validity
+  const [isFormValid, setIsFormValid] = useState(false);
+
   // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const newFormData = { ...formData, [name]: value };
+    setFormData(newFormData);
     console.log(`Updated ${name} to ${value}`);
+    
+    // Check form validity
+    const isValid = Object.values(newFormData).every(field => field.trim() !== "");
+    setIsFormValid(isValid);
   };
 
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission behavior
     console.log("Form submitted", formData);
+
+    if (!isFormValid) {
+      setAlert({ show: true, type: "destructive", message: "Please fill in all fields." });
+      setTimeout(() => {
+        setAlert({ show: false, type: "", message: "" });
+        console.log("Alert hidden");
+      }, 5000);
+      return;
+    }
 
     // Send email using emailjs
     emailjs.send(
@@ -144,7 +161,7 @@ const Contact = () => {
                 onChange={handleChange}
               />
               {/* btn */}
-              <Button size="md" className="max-w-40" type="submit">
+              <Button size="md" className="max-w-40" type="submit" disabled={!isFormValid}>
                 Connect!
               </Button>
             </form>
