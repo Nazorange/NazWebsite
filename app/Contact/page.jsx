@@ -36,15 +36,21 @@ const Contact = () => {
   // State for form validity
   const [isFormValid, setIsFormValid] = useState(false);
 
+  // Helper function to validate email format
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     const newFormData = { ...formData, [name]: value };
     setFormData(newFormData);
     console.log(`Updated ${name} to ${value}`);
-    
+
     // Check form validity
-    const isValid = Object.values(newFormData).every(field => field.trim() !== "");
+    const isValid = Object.values(newFormData).every(field => field.trim() !== "") && isValidEmail(newFormData.email);
     setIsFormValid(isValid);
   };
 
@@ -161,7 +167,12 @@ const Contact = () => {
                 onChange={handleChange}
               />
               {/* btn */}
-              <Button size="md" className="max-w-40" type="submit" disabled={!isFormValid}>
+              <Button 
+                size="md" 
+                className={`max-w-40 ${!isFormValid ? 'bg-gray-400 cursor-not-allowed' : ''}`} 
+                type="submit" 
+                disabled={!isFormValid}
+              >
                 Connect!
               </Button>
             </form>
