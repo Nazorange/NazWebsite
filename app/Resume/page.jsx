@@ -72,17 +72,17 @@ const experience = {
     items: [
       {
         company: "Aptean.",
-        position: "CS Analyst",
+        position: "Data Analyst",
         duration: "Mar 2022 - Mar 2023",
       },
       {
         company: "BrainOVision",
-        position: "Web Developer Intern",
+        position: "Data Analyst Intern",
         duration: "Summer 2021",
       },
       {
         company: "INTERAKTIVE.  IO",
-        position: "Technical Associate",
+        position: "Data Engineer",
         duration: "Jan 2021 - Oct 2021",
       },
     ],
@@ -282,6 +282,18 @@ const project = {
     description:
       "An assortment of projects undertaken by me individually or as a team member. These projects reflect my ability to apply technical skills, collaborate effectively, and deliver impactful solutions in various domains.",
     items: [
+      {
+        Name: "Proce Elasticity Modelling Using PYSPARK",
+        description: "An attempt to measure how sensitive consumer demand is to changes in price.",
+        TechStack: "Pyspark,Snowflake ",
+      },
+
+      {
+        Name: "Fashion Recommedndation System",
+        description: "Building a Recommendation System with two Two-Tower Models.",
+        TechStack: "Python,Deep Learning ",
+      },
+
       {
         Name: "Options Pricing with ML",
         description: "To predict call option close price.",
