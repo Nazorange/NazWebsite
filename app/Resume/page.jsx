@@ -283,7 +283,7 @@ const project = {
       "An assortment of projects undertaken by me individually or as a team member. These projects reflect my ability to apply technical skills, collaborate effectively, and deliver impactful solutions in various domains.",
     items: [
       {
-        Name: "Proce Elasticity Modelling Using PYSPARK",
+        Name: "Price Elasticity Modelling Using PYSPARK",
         description: "An attempt to measure how sensitive consumer demand is to changes in price.",
         TechStack: "Pyspark,Snowflake ",
       },
