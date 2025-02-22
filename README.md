@@ -100,7 +100,7 @@ This summer, I am planning to integrate data analytics dashboards into my portfo
 
 - **Email:** [snkhalan@g.syr.edu](mailto:snkhalan@g.syr.edu)
 - **LinkedIn:** [Nawazish Khalander](https://www.linkedin.com/in/nawazish-khalander)
-- **GitHub:** [github.com/yourusername](https://github.com/Nazorange)
+- **GitHub:** [github.com/Naaz](https://github.com/Nazorange)
 
 
 Your feedback is invaluable to me as I continue to grow and improve. Feel free to explore my website and share your thoughts or suggestions.
