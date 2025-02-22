@@ -89,12 +89,6 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - **Skills:** A comprehensive list of the tools and technologies I am proficient in.
 - **Contact:** Feel free to reach out to me through my social media links.
 
-## 📈 Future Roadmap
-
-This summer, I am planning to integrate data analytics dashboards into my portfolio, showcasing:
-- **Advanced Data Visualization:** Creating interactive dashboards for complex datasets.
-- **Predictive Analytics:** Utilizing machine learning models to forecast trends.
-- **Real-time Data Analysis:** Implementing real-time data streaming and analytics.
 
 ## 📬 Contact & Socials
 
